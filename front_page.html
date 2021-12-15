@@ -1,0 +1,92 @@
+
+
+<html>
+    <head>
+           <title>Hospital Management System</title>
+    </head>
+    
+    <body bgcolor="white">
+    
+    <h3>Connecting to Hospital_Management_System using MySQL/PHP</h3>
+    
+    
+    
+    <hr>
+    
+    <p>
+   Find the current patients who are still in hospital. List their names and admitted date.
+    
+    <p>
+    
+    <form action="hospital_management.php" method="POST">
+    
+    <input type="submit" value="search">
+    <input type="reset" value="erase">
+    </form>    
+    
+    
+    <hr>
+    <p>
+       List the patients' names who have used this type of wards. (e.g. general, special, CCU, ICCU)        
+        <p>
+              <form action="ward.php" method="POST">
+                     <label for="ward_type">Choose a type:</label>
+                     <select name="ward_type" id="ward_type">
+                            <option value="general">general</option>
+                            <option value="special">special</option>
+                            <option value="CCU">CCU</option>
+                            <option value="ICCU">ICCU</option>
+                     </select>
+                     <input type="submit" value="submit">
+                     </form>   
+       
+       <hr> 
+       <p>
+              Find the patients' names whose records were maintained by Anna (one of the receptionists) as well as whom were in hospital within (valid period:integers from 2 to inf)     
+               <p>  
+       <form action="record.php" method="POST">
+    
+              <input type="text" name="time"> <br>
+              <input type="submit" value="submit">
+              <input type="reset" value="erase">
+              </form>   
+                     days.
+                     <p>  
+              
+              <hr>
+              <p>
+                     Patients who were discharged in Novemeber(sort by last name).
+                      <p>  
+              <form action="treat.php" method="POST">
+    
+                     <input type="submit" value="search">
+                     <input type="reset" value="erase">
+                     </form>    
+                     
+                     
+                     <hr>
+                     <p>
+                            List the patients' names and time period in hospital in different departments.(e.g.Cardiology, Surgery, Narsopharyngology)
+                            <p> 
+                     <form action="symptom.php" method="POST">
+    
+                            <input type="text" name="symptom"> <br>
+                            <input type="submit" value="submit">
+                            <input type="reset" value="erase">
+                            </form>    
+                            
+                            
+                            <hr> 
+    <p>
+    <a href="hospital_management_html.txt" >Contents</a>
+    of this page.
+    
+    <p>
+    (The <a href="connectionData_final.txt" >connection data</a>,
+    kept separately for security reasons.)
+    
+    
+    
+    
+    </body>
+    </html>

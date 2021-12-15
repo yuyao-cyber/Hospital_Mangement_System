@@ -1,0 +1,9 @@
+<?php
+
+$server = "ix.cs.uoregon.edu";
+$dbname ="Hospital_Management_System";
+$user = "guest";
+$pass = "guest";
+$port= "3064";
+
+?>
